@@ -5,6 +5,10 @@ pipeline {
 	tools {
         maven "maven3"
     }
+    sshagent(['github-key']) {
+    git branch: 'ci-jenkins', url: 'git@github.com:DarshanAryaKalasapura/vprofile-project.git'
+}
+
 */	
     environment {
         NEXUS_VERSION = "nexus3"
