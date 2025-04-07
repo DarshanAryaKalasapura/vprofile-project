@@ -1,7 +1,7 @@
 pipeline {
     
 	agent any
-/*	
+/	
 	tools {
         maven "maven3"
     }
@@ -9,7 +9,7 @@ pipeline {
     git branch: 'ci-jenkins', url: 'git@github.com:DarshanAryaKalasapura/vprofile-project.git'
 }
 
-*/	
+/	
     environment {
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
